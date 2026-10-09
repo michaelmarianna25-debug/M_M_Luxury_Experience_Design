@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Luxury Guest Experience Design</title>
+<meta content="Μετατρέπουμε δωμάτια και ξενοδοχεία σε signature εμπειρίες που αυξάνουν την αντιλαμβανόμενη αξία, την πιστότητα και τον τζίρο." name="description"/>
+<link href="assets/logo.jpg" rel="icon" type="image/jpeg"/>
+<meta content="Luxury Guest Experience Design" property="og:title"/>
+<meta content="Signature guest experiences for luxury hotels · Εμπειρίες που μένουν." property="og:description"/>
+<meta content="assets/logo.jpg" property="og:image"/>
+<meta content="#0d0907" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Manrope:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ========== 3D BACKGROUND STAGE (fixed, driven by scroll) ========== -->
+<div aria-hidden="true" id="sky"></div>
+<div aria-hidden="true" id="stage">
+<div id="world">
+<div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+<img alt="" class="float" data-ry="18" data-x="-34" data-y="-8" data-z="-1300" src="assets/arrival.jpg"/>
+<img alt="" class="float" data-ry="-16" data-x="30" data-y="10" data-z="-1700" src="assets/sunset2.jpg"/>
+<img alt="" class="float" data-ry="14" data-x="-28" data-y="14" data-z="-2500" src="assets/before.jpg"/>
+<img alt="" class="float" data-ry="-18" data-x="32" data-y="-10" data-z="-3300" src="assets/after.jpg"/>
+<img alt="" class="float" data-ry="16" data-x="-32" data-y="-6" data-z="-4100" src="assets/sunset1.jpg"/>
+<img alt="" class="float" data-ry="-14" data-x="30" data-y="8" data-z="-4900" src="assets/sunset3.jpg"/>
+<img alt="" class="float" data-ry="14" data-x="-30" data-y="10" data-z="-5700" src="assets/sunset4.jpg"/>
+</div>
+</div>
+<canvas aria-hidden="true" id="dust"></canvas>
+<div aria-hidden="true" id="grain"></div>
+<!-- ========== NAV ========== -->
+<header id="nav">
+<a aria-label="Αρχή" class="brand" href="#top">
+<img alt="MM Experiences · Design · Hospitality" src="assets/logo.jpg"/>
+<span data-t="1">Luxury Guest Experience Design</span>
+</a>
+<nav>
+<a data-t="2" href="#about">Σχετικά</a>
+<a data-t="3" href="#method">Μεθοδολογία</a>
+<a data-t="4" href="#beforeafter">Πριν &amp; Μετά</a>
+<a data-t="5" href="#impact">Αποτέλεσμα</a>
+<a data-t="6" href="#plans">Πακέτα</a>
+<a class="cta" data-t="7" href="#contact">Επικοινωνία</a>
+<div aria-label="Language" class="lang" role="group"><button class="on" data-lang="el" type="button">EL</button><button data-lang="en" type="button">EN</button></div>
+</nav>
+</header>
+<div id="progress"><i></i></div>
+<main id="top">
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+<div class="hero-inner">
+<p class="eyebrow reveal" data-t="8">Experiences · Design · Hospitality</p>
+<h1 class="split" data-split="">Luxury<br/><em>Guest Experience</em> Design</h1>
+<p class="lead reveal" data-t="9">Πέρα από το Design.<br/><span class="gold">Δημιουργούμε Εμπειρίες που Μένουν.</span></p>
+<a class="btn reveal" data-t="10" href="#plans">Δείτε τα πακέτα</a>
+</div>
+<div aria-hidden="true" class="scroll-cue" data-t="11"><span></span>Scroll</div>
+</section>
+<!-- ========== BANNER (same as the email campaign) ========== -->
+<section class="banner" aria-label="Beyond the booking">
+<img src="assets/banner.jpg" alt=""/>
+<div class="banner-text"><h2>Beyond the booking</h2><p>Create the stay they’ll return for.</p></div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="sec about" id="about">
+<div class="wrap grid2">
+<figure class="arch tilt reveal-3d">
+<img alt="Μαριάννα Σπανίδη &amp; Μιχάλης Κωλέττης" src="assets/founders.jpg"/>
+<figcaption data-t="12">Μαριάννα &amp; Μιχάλης</figcaption>
+</figure>
+<div class="copy">
+<p class="eyebrow reveal" data-t="13">Σχετικά με εμάς</p>
+<h2 class="reveal" data-t="14">Συνεργάτες στη φιλοξενία του μέλλοντος.</h2>
+<p class="reveal" data-t="15">Είμαστε η Μαριάννα και ο Μιχάλης, με ακαδημαϊκό υπόβαθρο MSc στα <b>Συμπεριφορικά Οικονομικά</b> και την <b>Επιστήμη Δεδομένων</b> και κοινό πάθος για τις εμπειρίες που γεννούν έντονα συναισθήματα και μένουν αξέχαστες.</p>
+<p class="reveal" data-t="16">Οι περισσότερες εταιρείες τουριστικού marketing επικεντρώνονται στις κρατήσεις και την αύξηση των εσόδων. Εμείς εστιάζουμε σε αυτό που προηγείται και ακολουθεί της κράτησης: <span class="gold">την εμπειρία του επισκέπτη.</span></p>
+<p class="reveal" data-t="17">Δεν είμαστε ακόμη ένα agency. Σχεδιάζουμε εμπειρίες που δημιουργούν συναισθηματικό δέσιμο, μετατρέπουν τους επισκέπτες σε πιστούς πελάτες και τις αναμνήσεις σε μακροχρόνια αξία για την επιχείρηση.</p>
+<blockquote class="reveal" data-t="18">Η επιτυχία δεν είναι μόνο να γεμίσει ένα δωμάτιο. Είναι να δημιουργήσεις έναν λόγο που προκαλεί την έντονη επιθυμία να επιστρέψει κάποιος.</blockquote>
+</div>
+</div>
+</section>
+<!-- ========== WHAT HOTELIERS WANT ========== -->
+<section class="sec wants" id="wants">
+<div class="wrap">
+<p class="eyebrow reveal" data-t="19">Τι θέλουν πραγματικά οι luxury ξενοδόχοι</p>
+<div class="cards3">
+<article class="card3d reveal-3d">
+<q data-t="20">Πώς θα ανεβάσω την τιμή ανά διανυκτέρευση;</q>
+<p data-t="21">Αύξηση της μέσης τιμής διανυκτέρευσης (ADR) μέσω signature εμπειριών και premium positioning.</p>
+</article>
+<article class="card3d reveal-3d">
+<q data-t="22">Πώς θα γίνω top 10 στο Booking;</q>
+<p data-t="23">Βελτιστοποίηση ranking και αύξηση visibility.</p>
+</article>
+<article class="card3d reveal-3d">
+<q data-t="24">Πώς θα έχω περισσότερους repeat πελάτες;</q>
+<p data-t="25">Δημιουργία loyalty και ενίσχυση guest retention.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- ========== GOAL ========== -->
+<section class="sec goal" id="goal">
+<div class="wrap grid2">
+<div class="copy">
+<p class="eyebrow reveal" data-t="26">Στόχος έργου</p>
+<h2 class="reveal" data-t="27">Η υπέρβαση στη φιλοξενία είναι εδώ.</h2>
+<p class="reveal" data-t="28">Να μετατρέψουμε ένα δωμάτιο ή ξενοδοχείο από χώρο διαμονής σε <span class="gold">εμπειρία προορισμού</span> — μια εμπειρία που οι επισκέπτες θυμούνται, φωτογραφίζουν, μοιράζονται και επιλέγουν ξανά.</p>
+</div>
+<ul class="results">
+<li class="reveal" data-t="29"><i>01</i>Υψηλότερη αντιλαμβανόμενη αξία</li>
+<li class="reveal" data-t="30"><i>02</i>Καλύτερες κριτικές &amp; social sharing</li>
+<li class="reveal" data-t="31"><i>03</i>Ισχυρότερη πιστότητα πελατών</li>
+<li class="reveal big" data-t="32"><i>04</i>Premium τιμολόγηση <b class="gold"><span data-count="15">15</span>–<span data-count="25">25</span>%</b> <small>→ άμεση αύξηση τζίρου</small></li>
+<li class="reveal" data-t="33"><i>05</i>Μεγαλύτερη ανταγωνιστική διαφοροποίηση</li>
+</ul>
+</div>
+</section>
+<!-- ========== METHOD ========== -->
+<section class="sec method" id="method">
+<div class="wrap">
+<p class="eyebrow reveal" data-t="34">Η μεθοδολογία μας</p>
+<h2 class="reveal" data-t="35">Από ένα απλό δωμάτιο σε μια αξέχαστη εμπειρία που γεννά την επιθυμία επανάληψης.</h2>
+<p class="sub reveal" data-t="36">Μετατρέπουμε χώρους διαμονής σε signature εμπειρίες που αυξάνουν την αντιλαμβανόμενη αξία, ενισχύουν τη συναισθηματική σύνδεση και διαφοροποιούν το ξενοδοχείο. Οι αναλύσεις μας βασίζονται στα χαρακτηριστικά και τις ανάγκες του κοινού στο οποίο απευθύνεστε.</p>
+<p class="sub approach reveal" data-t="201">Η τακτική μας βασίζεται σε <b>εις βάθος ανάλυση του κοινού και των δεδομένων της επιχείρησής σας</b>, ώστε να σχεδιάζονται στοχευμένες δράσεις που αυξάνουν την αντιλαμβανόμενη αξία και, κατά συνέπεια, την κερδοφορία — <span class="gold">χωρίς να απαιτούνται ανακαινίσεις ή άλλα έξοδα</span>. Οι υπηρεσίες μας είναι συμβουλευτικής φύσεως, σε ένα αντικείμενο που διαφοροποιεί άμεσα την επιχείρηση στην αγορά και δεν είναι ακόμη ευρέως διαδεδομένο στην Ελλάδα. Πρόκειται για αναξιοποίητη αξία που δίνει ακόμη μεγαλύτερο πλεονέκτημα σε όποιον πάρει πρώτος την πρωτοβουλία να προσαρμοστεί — με αποτελέσματα ήδη από την πρώτη σεζόν εφαρμογής των αλλαγών.</p>
+</div>
+<div class="phases wrap">
+<div aria-hidden="true" class="phase-rail"><i></i></div>
+<article class="phase reveal-3d">
+<span class="num">1</span>
+<div>
+<h3 data-t="37">Experience Audit</h3>
+<p class="tag" data-t="38">Βιώνουμε το δωμάτιο σαν επισκέπτες</p>
+<p data-t="39">Αναλύουμε κάθε σημείο επαφής για να εντοπίσουμε ευκαιρίες βελτίωσης και διαφοροποίησης από την άφιξη έως την αναχώρηση.</p>
+<ul class="ticks">
+<li data-t="40">Έλλειψη ταυτότητας</li>
+<li data-t="41">Περιορισμένη συναισθηματική σύνδεση</li>
+<li data-t="42">Αναξιοποίητες προοπτικές εμπειρίας</li>
+<li data-t="43">Μικρή διαφοροποίηση από τον ανταγωνισμό</li>
+</ul>
+<p class="note" data-t="44">Ένα όμορφο δωμάτιο δεν είναι απαραίτητα μια αξέχαστη εμπειρία. Χαμηλή συναισθηματική εμπλοκή → μέτρια reviews χωρίς ενθουσιασμό → μικρότερη πιθανότητα επαναλαμβανόμενης επισκεψιμότητας.</p>
+</div>
+</article>
+<article class="phase has-img reveal-3d">
+<span class="num">2</span>
+<div>
+<h3 data-t="45">Experience Concept Design</h3>
+<p class="tag" data-t="46">Δημιουργούμε τη θεματική ταυτότητα</p>
+<p data-t="47">Σχεδιάζουμε στρατηγικά την εμπειρία που θέλουμε να βιώσει ο επισκέπτης.</p>
+</div>
+<figure class="phase-img"><img alt="A Calmer You: room mist και λεπτομέρειες ευεξίας" src="assets/sunset3.jpg" loading="lazy"/></figure>
+</article>
+<article class="phase reveal-3d">
+<span class="num">3</span>
+<div>
+<h3 data-t="56">Guest Experience Flow</h3>
+<p class="tag" data-t="57">Σχεδιάζουμε κάθε στιγμή της διαμονής</p>
+<div class="flow">
+<div><i>01</i><b data-t="58">Arrival Ritual</b><span data-t="59">Η πρώτη εντύπωση &amp; προσωπική υποδοχή</span></div>
+<div><i>02</i><b data-t="60">WOW Moment</b><span data-t="61">Η κορυφαία στιγμή στην εμπειρία</span></div>
+<div><i>03</i><b data-t="62">Sensory Experience</b><span data-t="63">Στιγμές ενεργοποίησης των αισθήσεων</span></div>
+<div><i>04</i><b data-t="64">Slow Closing</b><span data-t="65">Συνθήκες για ένα ήρεμο κλείσιμο της ημέρας</span></div>
+</div>
+<p class="note" data-t="66">Κάθε λεπτομέρεια υποστηρίζει την εμπειρία και ενισχύει τη συναισθηματική σύνδεση.</p>
+</div>
+</article>
+<figure class="arrival reveal-3d">
+<img alt="Arrival Ritual" src="assets/arrival.jpg"/>
+<figcaption><h4>Arrival Ritual</h4></figcaption>
+</figure>
+<article class="phase reveal-3d">
+<span class="num">4</span>
+<div>
+<h3 data-t="75">Μέτρηση &amp; Βελτιστοποίηση</h3>
+<p class="tag" data-t="76">Μετράμε ό,τι έχει νόημα — και βελτιώνουμε ό,τι μπορεί να γίνει καλύτερο</p>
+<dl class="steps">
+<div><dt data-t="77">Αρχική εικόνα</dt><dd data-t="78">Συμφωνούμε δείκτες και συγκρίσιμη περίοδο πριν την παρέμβαση.</dd></div>
+<div><dt data-t="79">Πιλοτική εφαρμογή</dt><dd data-t="80">Καταγράφουμε ημερομηνία, κόστος και χώρους εφαρμογής.</dd></div>
+<div><dt data-t="81">Αξιολόγηση</dt><dd data-t="82">Εξάγουμε feedback και αλλαγές σε διαθέσιμους δείκτες.</dd></div>
+<div><dt data-t="83">Βελτίωση</dt><dd data-t="84">Ιεραρχούμε διορθώσεις και επόμενες εμπειρίες.</dd></div>
+</dl>
+</div>
+</article>
+</div>
+</section>
+<!-- ========== BEFORE / AFTER (pinned, scroll-scrubbed) ========== -->
+<section class="ba-pin" id="beforeafter">
+<div class="ba-sticky">
+<p class="eyebrow" data-t="85">Πριν &amp; Μετά</p>
+<h2 data-t="86">Ένα δωμάτιο. <em>Δύο εντελώς διαφορετικές εμπειρίες.</em></h2>
+<div class="ba" id="ba">
+<img alt="Μετά: Concept Room · Aegean Harmony" class="ba-img" src="assets/after.jpg"/>
+<div class="ba-before"><img alt="Πριν: ουδέτερο δωμάτιο χωρίς ταυτότητα" class="ba-img" src="assets/before.jpg"/></div>
+<span class="badge b" data-t="87">ΠΡΙΝ</span>
+<span class="badge a" data-t="88">ΜΕΤΑ <small>Concept Room · Aegean Harmony</small></span>
+<div aria-label="Σύγκριση πριν και μετά" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="ba-handle" role="slider" tabindex="0"><span></span></div>
+</div>
+<div class="ba-words">
+<p class="w-before" data-t="89">Ουδέτερο · Απλό · Χωρίς ταυτότητα · Λίγο φως · Καμία εμπειρία · Χωρίς συναίσθημα</p>
+<p class="w-after" data-t="90">Ταυτότητα · Εμπειρία · Συναίσθημα · Ζεστό φως · Θέμα · Χαρακτήρας · Αξέχαστη διαμονή</p>
+</div>
+<p class="hint" data-t="91">Σύρτε τη γραμμή ή συνεχίστε το scroll</p>
+</div>
+</section>
+<!-- ========== QUICK WINS ========== -->
+<section class="sec quick" id="quick">
+<div class="wrap">
+<p class="eyebrow reveal" data-t="92">Παρεμβάσεις και εντός σεζόν; Φυσικά!</p>
+<h2 class="reveal" data-t="93">Luxury Experience Audit + Quick Wins</h2>
+<div class="strip reveal">
+<b data-t="104">Αποτελέσματα:</b>
+<span data-t="105">Δεν χρειάζεται ανακαίνιση • Εφαρμόζεται άμεσα • Φέρνει reviews</span>
+<em data-t="106">Immediate: <b class="gold">+25%</b> reviews</em>
+<em data-t="107">Cost: <b class="gold">€0</b> renovation</em>
+</div>
+<p class="after-note reveal" data-t="108">Η δημιουργία εμπειριών δεν σταματά σε ένα concept. Μπορούμε να αναπτύξουμε μια ολόκληρη συλλογή θεματικών δωματίων, σχεδιασμένων γύρω από τις προτιμήσεις και τα κίνητρα των πελατών σας.</p>
+</div>
+</section>
+<!-- ========== IMPACT ========== -->
+<section class="sec impact" id="impact">
+<div class="wrap">
+<p class="eyebrow reveal" data-t="109">Business Impact</p>
+<h2 class="reveal" data-t="110">Ο αντίκτυπος στην πράξη</h2>
+<p class="sub reveal" data-t="111">Επιδιωκόμενα οφέλη και ενδεικτικοί δείκτες. Η επίδραση αξιολογείται μετά την εφαρμογή, με διαθέσιμα συγκρίσιμα στοιχεία.</p>
+<div class="cards4">
+<article class="card3d reveal-3d"><h4 data-t="112">Guest Satisfaction</h4><p data-t="113">Καλύτερες κριτικές<br/>Ισχυρότερη συναισθηματική σύνδεση</p></article>
+<article class="card3d reveal-3d"><h4 data-t="114">Organic Marketing</h4><p data-t="115">Περισσότερο social sharing<br/>Ενίσχυση brand awareness</p></article>
+<article class="card3d reveal-3d"><h4 data-t="116">Customer Loyalty</h4><p data-t="117">Περισσότερες επαναλαμβανόμενες κρατήσεις<br/>Μακροχρόνια πιστότητα πελατών</p></article>
+<article class="card3d reveal-3d"><h4 data-t="118">Revenue Growth</h4><p data-t="119">Premium εμπειρία έναντι του ανταγωνισμού<br/>Αύξηση ADR*, πληρότητας και RevPAR*</p></article>
+</div>
+<!-- Turnover scenarios -->
+<div class="calc reveal-3d" id="calc">
+<h3 data-t="120">Από <span class="gold">+33%</span> έως <span class="gold">×8</span> τζίρο σε 1 χρόνο</h3>
+<p class="sub" data-t="121">Ενδεικτικά σενάρια: Τζίρος = πελάτες × ADR (μέσος όρος τιμής διανυκτέρευσης) × διανυκτερεύσεις ανά έτος.</p>
+<div class="tabs" role="tablist">
+<button class="on" data-s="0" data-t="122" role="tab">Σήμερα</button>
+<button data-s="1" data-t="123" role="tab">+10% σε κάθε παράγοντα</button>
+<button data-s="2" data-t="124" role="tab">Διπλασιασμός σε κάθε παράγοντα</button>
+</div>
+<div class="eq">
+<div><small data-t="125">Αριθμός πελατών</small><b id="c-guests">100</b></div><span data-t="126">×</span>
+<div><small data-t="127">ADR · μέσος όρος τιμής διανυκτέρευσης</small><b id="c-spend">300€</b></div><span data-t="128">×</span>
+<div><small data-t="129">Διανυκτερεύσεις ανά έτος</small><b id="c-freq">2</b></div><span data-t="130">=</span>
+<div class="total"><small data-t="131">Τζίρος</small><b id="c-total">60.000€</b></div>
+</div>
+<p class="delta" id="c-delta">Βάση σύγκρισης</p>
+<p class="fine" data-t="132">*ADR = Average Daily Rate (Μέση Ημερήσια Τιμή Δωματίου) · *RevPAR = Revenue Per Available Room (Έσοδο ανά διαθέσιμο δωμάτιο)</p>
+</div>
+</div>
+</section>
+<!-- ========== PLANS ========== -->
+<section class="sec plans" id="plans">
+<div class="wrap">
+<p class="eyebrow reveal" data-t="133">Πρόταση συνεργασίας</p>
+<h2 class="reveal" data-t="134">Signature Room Experience</h2>
+<p class="sub reveal" data-t="135">Δημιουργούμε εμπειρίες που μετατρέπουν ένα δωμάτιο σε λόγο επιλογής του ξενοδοχείου σας.</p>
+<ul class="incl">
+<li class="reveal" data-t="136"><b>Experience Audit</b>Επίσκεψη στον χώρο σας &amp; αξιολόγηση της εμπειρίας μέσα από την οπτική του επισκέπτη.</li>
+<li class="reveal" data-t="137"><b>Concept Design</b>Σχεδιασμός θεματικής εμπειρίας προσαρμοσμένης στην ταυτότητα του ξενοδοχείου και τους στόχους του.</li>
+<li class="reveal" data-t="138"><b>Guest Experience Flow</b>Διαμόρφωση κάθε σημείου επαφής από την άφιξη έως την αναχώρηση.</li>
+<li class="reveal" data-t="139"><b>Implementation Guide</b>Αναλυτικά reports, προτάσεις προμηθευτών και οδηγός υλοποίησης.</li>
+<li class="reveal" data-t="140"><b>Market, Price &amp; Revenue Strategy</b>Προτάσεις βασισμένες στην αντιλαμβανόμενη αξία, σε τάσεις της αγοράς και ανάλυση ανταγωνισμού.</li>
+</ul>
+<h3 class="packs-title reveal" data-t="203">Τα πακέτα μας</h3>
+<div class="packs">
+<article class="pack tilt reveal-3d">
+<h4 data-t="141">Standard</h4><p class="dur" data-t="142">4–6 εβδομάδες</p>
+<ul>
+<li data-t="144">Έρευνα αγοράς &amp; ανταγωνισμού</li>
+<li data-t="145">Ανάλυση εμπειρίας πελάτη &amp; Customer Journey</li>
+<li data-t="146">Δημιουργία Signature Experiences</li>
+<li data-t="147">Αναλυτικό πλάνο εφαρμογής</li>
+<li data-t="148">1 δωρεάν On-site Experience Audit + free content</li>
+</ul>
+</article>
+<article class="pack featured tilt reveal-3d">
+<span class="ribbon" data-t="149">★ Δημοφιλές</span>
+<h4 data-t="150">Growth &amp; Insights</h4><p class="dur" data-t="151">6–8 εβδομάδες</p>
+<p class="plus" data-t="153">Ό,τι περιλαμβάνεται στο προηγούμενο πακέτο +</p>
+<ul>
+<li data-t="154">Αναλυτική έκθεση αγοράς &amp; ανταγωνισμού</li>
+<li data-t="155">Ανάλυση κριτικών &amp; συναισθήματος πελατών</li>
+<li data-t="156">Ανάλυση θέσης στην αγορά</li>
+<li data-t="157">Ανάλυση ευκαιριών ανάπτυξης &amp; αύξησης εσόδων</li>
+</ul>
+</article>
+<article class="pack tilt reveal-3d">
+<h4 data-t="158">Premium</h4><p class="dur" data-t="159">8–12 εβδομάδες</p>
+<p class="plus" data-t="161">Ό,τι περιλαμβάνεται στα προηγούμενα πακέτα +</p>
+<ul>
+<li data-t="162">Προτάσεις κατάλληλων προμηθευτών</li>
+<li data-t="163">Υποστήριξη επιλογής υλικών &amp; εξοπλισμού</li>
+<li data-t="164">Εκτεταμένη υποστήριξη στην εφαρμογή</li>
+<li data-t="165">Δωρεάν 360° φωτογράφιση χώρου</li>
+</ul>
+</article>
+<article class="pack featured tilt reveal-3d">
+<span class="ribbon">★ Most value for money</span>
+<h4 data-t="166">(Semi) Annual Partnership</h4><p class="dur" data-t="167">6 ή 12 μήνες, με δυνατότητα επέκτασης</p>
+<p class="plus" data-t="169">Ό,τι περιλαμβάνεται στα προηγούμενα πακέτα +</p>
+<ul>
+<li data-t="170">Συνεχής βελτιστοποίηση της εμπειρίας πελάτη</li>
+<li data-t="171">Συντονισμός με διοίκηση &amp; προσωπικό</li>
+<li data-t="172">Συνεργασία με διακοσμητές / designers</li>
+<li data-t="173">Συνεχής προσαρμογή &amp; ανάπτυξη νέων experiences</li>
+<li data-t="174">2 δωρεάν On-site Experience Audits / έτος</li>
+<li data-t="204">Σφαιρική συμβουλευτική για την ολική ανάπτυξη της επιχείρησης</li>
+</ul>
+</article>
+</div>
+<div class="partner reveal-3d">
+<p class="eyebrow" data-t="179">Long-Term Experience Partnership</p>
+<h3 data-t="180">Η εμπειρία δεν παραμένει στατική.</h3>
+<p data-t="181">Αν το προτιμήσετε, παραμένουμε στρατηγικοί συνεργάτες με τακτικές επανεξετάσεις, νέες ιδέες και συνεχή εξέλιξη του concept, ώστε να παραμένει επίκαιρο, ανταγωνιστικό και ελκυστικό για τους επισκέπτες σας.</p>
+</div>
+</div>
+</section>
+<!-- ========== CONTACT ========== -->
+<section class="sec contact" id="contact">
+<div class="wrap center">
+<img alt="MM · Experiences · Design · Hospitality" class="logo reveal" src="assets/logo.jpg"/>
+<h2 class="reveal" data-t="182">Ας δημιουργήσουμε κάτι μοναδικό μαζί!</h2>
+<p class="sub reveal" data-t="183">Κλείστε την επόμενη συνάντησή μας για να συζητήσουμε και να αναλύσουμε τα πακέτα μας.</p>
+<form action="https://formsubmit.co/michaelmarianna25@gmail.com" class="cform reveal-3d" id="cform" method="POST" novalidate="">
+<h3 data-t="188">Στείλτε μας μήνυμα</h3>
+<div class="row">
+<label><span data-t="189">Ονοματεπώνυμο</span><input autocomplete="name" name="name" required="" type="text"/></label>
+<label><span data-t="190">Email</span><input autocomplete="email" name="email" required="" type="email"/></label>
+</div>
+<div class="row">
+<label><span data-t="191">Ξενοδοχείο / Property</span><input autocomplete="organization" name="property" type="text"/></label>
+<label><span data-t="192">Ενδιαφέρον για</span>
+<select name="package">
+<option data-t="193" value="Not sure yet">Δεν έχω αποφασίσει</option>
+<option data-t="194" value="Standard">Standard</option>
+<option data-t="195" value="Growth &amp; Insights">Growth &amp; Insights</option>
+<option data-t="196" value="Premium">Premium</option>
+<option data-t="197" value="Annual Partnership">(Semi) Annual Partnership</option>
+</select></label>
+</div>
+<label><span data-t="198">Μήνυμα</span><textarea name="message" required="" rows="5"></textarea></label>
+<input aria-hidden="true" autocomplete="off" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="New enquiry · Luxury Guest Experience Design website"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<button class="btn" data-t="199" type="submit">Αποστολή</button>
+<p aria-live="polite" class="form-status" id="fstatus" role="status"></p>
+</form>
+</div>
+<footer data-t="200">© 2026 Marianna Spanidi &amp; Michail Kolettis. All Rights Reserved.</footer>
+</section>
+</main>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
